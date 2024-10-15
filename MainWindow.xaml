@@ -1,0 +1,28 @@
+﻿<Window x:Class="MuveltsegiVerseny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuveltsegiVerseny"
+        mc:Ignorable="d"
+        Title="Műveltségi verseny" Height="1000" Width="400">
+    <Grid>
+        <ListBox x:Name="lbxKerdesek" Margin="10,10,10,857" />
+        <Button Content="Számolás" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Click="Kerdojel_Button_Click"/>
+        <TextBlock x:Name="txbKerdojel" HorizontalAlignment="Left" Margin="11,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"><Run Language="hu-hu" Text="A kérdőjeles feladatok száma: "/></TextBlock>
+        <TextBlock x:Name="txbHaromPont" HorizontalAlignment="Left" Margin="10,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="3 pontos kémi"/><Run Language="hu-hu" Text="a"/><Run Text=" feladatok száma: "/></TextBlock>
+        <Button x:Name="HaromPont" Content="Számolás" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top" Click="HaromPont_Click"/>
+        <TextBlock x:Name="txbSzamertek" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="hu-hu" Text="Válaszok számértékeinek tartománya: "/></TextBlock>
+        <Button x:Name="Szamertek" Content="Számolás" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top" Click="Szamertek_Click"/>
+        <ListBox x:Name="lbxTemakorok" Margin="10,381,10,467"/>
+        <Button x:Name="TemakorLIsta" Content="Listázás" HorizontalAlignment="Left" Margin="10,528,0,0" VerticalAlignment="Top" Click="TemakorLIsta_Click"/>
+        <TextBox x:Name="txbKifejezes" HorizontalAlignment="Left" Margin="11,577,0,0" TextWrapping="Wrap" Text="evben" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Kereses" Content="Keresés" HorizontalAlignment="Left" Margin="11,609,0,0" VerticalAlignment="Top" Click="Kereses_Click" Width="120"/>
+        <ListBox x:Name="lbxKeresett" Margin="10,651,11,216"/>
+        <TextBlock x:Name="txbSorsoltKerdes" HorizontalAlignment="Center" Margin="0,794,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="382" Height="26"/>
+        <TextBox x:Name="txbValasz" HorizontalAlignment="Left" Margin="8,825,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txbPont" HorizontalAlignment="Left" Margin="11,894,0,0" TextWrapping="Wrap" Text="Pontszám: " VerticalAlignment="Top"/>
+        <Button x:Name="ValaszKuldes" Content="Válasz" HorizontalAlignment="Left" Margin="8,854,0,0" VerticalAlignment="Top" Click="ValaszKuldes_Click" Width="120"/>
+        <Button x:Name="General" Content="Generálás" HorizontalAlignment="Center" Margin="0,934,0,0" VerticalAlignment="Top" Width="380" Click="General_Click"/>
+    </Grid>
+</Window>
